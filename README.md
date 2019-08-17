@@ -9,4 +9,5 @@ web前端开发基础，内容源自李刚老师的《疯狂HTML5/CSS3/JavaScrip
 
 <br>
 
-## :pencil2: HTML 5
+## :one: HTML 5
+- [HTML 5 简介](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/docs/HTML/HTML%205%20%E7%AE%80%E4%BB%8B.md)
