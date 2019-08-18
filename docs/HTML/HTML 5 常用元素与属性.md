@@ -15,7 +15,7 @@
 * `<hr>`：水平线。
 * `<div>`：文档中的节，块级元素。
 * `<span>`：与`<div>`类似，行内元素。
-几乎所有的HTML元素都可以指定id、class和style属性，id属性用于为HTML元素指定唯一的标识，该标识是通过DOM访问HTML元素的重要途径。class和style属性是CSS样式相关的属性。<span.../>和<p.../>元素智能保护文本、图像、超链接、文本格式化元素和表单控件等元素内容。
+几乎所有的HTML元素都可以指定id、class和style属性，id属性用于为HTML元素指定唯一的标识，该标识是通过DOM访问HTML元素的重要途径。class和style属性是CSS样式相关的属性。`<span.../>`和`<p.../>`元素智能保护文本、图像、超链接、文本格式化元素和表单控件等元素内容。
 程序清单：[codes\02\2.1\basic.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.1/basic.html)
 页面效果：
 <br>
