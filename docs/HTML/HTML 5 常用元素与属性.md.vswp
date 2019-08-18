@@ -19,7 +19,7 @@ vnote_backup_file_826537664 I:/有灵魂的程序员/fk-html-css-javascript/docs
 &nbsp;&nbsp;几乎所有的HTML元素都可以指定id、class和style属性，id属性用于为HTML元素指定唯一的标识，该标识是通过DOM访问HTML元素的重要途径。class和style属性是CSS样式相关的属性。<span.../>和<p.../>元素智能保护文本、图像、超链接、文本格式化元素和表单控件等元素内容。
 &nbsp;&nbsp;程序清单：[codes\02\2.1\basic.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.1/basic.html)
 &nbsp;&nbsp;页面效果：<br/>
-![文本格式化标签的效果](_v_images/20190818114638212_23545.png =220x)
+![文本格式化标签的效果](_v_images/20190818114758569_19960.png)
 
 ### 1.1.2. 文本格式化元素
 * `<b>`：粗体文本。
