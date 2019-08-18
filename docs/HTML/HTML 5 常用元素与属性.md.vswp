@@ -21,7 +21,7 @@ vnote_backup_file_826537664 I:/有灵魂的程序员/fk-html-css-javascript/docs
 程序清单：[codes\02\2.1\basic.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.1/basic.html)</br>
 页面效果：
 <br>
-<div align="center">
+<div>
     <img src="../../assets/02/2.1/QQ截图20190818113739.png" width="200px">
 </div>
 <br>
@@ -190,3 +190,67 @@ HTML 5 不再推荐在页面中使用框架集，因此HTML 5 删除了<frameset
 * src：指定一个URL，指定该iframe将装载哪个页面。
 
 ## 1.2. HTML 5 新增的通用属性
+### 1.2.1. contentEditable属性
+HTML 5 为大部分HTML 元素都增加了contentEditable属性，如果该属性为true，则该元素中的内容可以被编辑。contentEditable属性具有“可继承”的特点，如果父元素是“可编辑”的，则它也是可编辑的，除非显示指定contentEditable=false。此外，通过isContentEditable属性返回可编辑的状态。
+
+程序清单：[codes\02\2.2\contentEditable.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.2/contentEditable.html)</br>
+
+### 1.2.2. designMode属性
+designMode属性相当于一个全局的contentEditable属性，如果把整个页面的designMode设置为on，则该页面所有支持contentEditable属性的元素都将变为可编辑状态，designMode属性默认值为off。
+
+程序清单：[codes\02\2.2\designMode.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.2/designMode.html)</br>
+
+### 1.2.3. hidden属性
+若元素的该属性值为true，则浏览器不显示该组件，且不保留该组件所占用的空间。
+
+程序清单：[codes\02\2.2\hidden.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.2/hidden.html)</br>
+
+### 1.2.4. spellcheck属性
+HTMML为<input.../>、<textarea.../>等元素提供了spellcheck属性，若该属性为true，浏览器将会对用户输入的文本内容执行输入检查，如果检查不通过，浏览器会对拼错的单词进行提示。
+
+程序清单：[codes\02\2.2\spellcheck.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.2/spellcheck.html)</br>
+
+## 1.3. HTML 5 新增的常用元素
+### 1.3.1. 文档结构元素
+* `<article>`：该元素用于表示页面上独立、完整的一篇“文章”,该元素表示的内容可以是一个帖子、一篇博客、一条短文或者回复等等。`<article.../>`的简单规则：
+    * `<header.../>`：定义文章“标题”。
+    * `<footer.../>`：定义文章“脚注”。
+    * `<section.../>`：将文章分段。
+    * `<article.../>`：嵌套附属文章。
+* `<section>`：对页面的内容进行分块。<section.../>元素通常可以由标题和内容组成。`<section.../>`的简单规则：
+    * 通常建议`<section.../>`元素包含一个标题（也就是<h1.../>~<h6.../>元素定义的标题）。
+    * `<section.../>`元素可以包含多个<article.../>元素，表示该“分块”内部包含多篇文章。
+    * `<section.../>`元素可以嵌套<section.../>元素，表示该“分块”包含多个“子分块”。
+
+程序清单：[codes\02\2.3\article.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.3/article.html)</br>
+页面效果：
+<br>
+<div>
+    <img src="../../assets/02/2.3/QQ截图20190818220159.png" width="200px">
+</div>
+<br>
+
+* `<nav>`：该元素用于定义页面上的“导航条”，包括页面上方的“主导航条”、侧边的“边栏导航条”、页面内部的“页面导航条”、页面下方的“底部导航条”等。
+* `<aside>`：用于定义当前页面或文章的附属信息，通常，推荐<aside.../>元素使用CSS渲染成侧边栏。将`<aside>`元素放在<body.../>内部，则为整个页面的“边栏”，将`<aside>`元素放在其它元素的内部，则表明为父元素添加“边栏”。
+
+程序清单：[codes\02\2.3\aside.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.3/aside.html)</br>
+页面效果：
+<br>
+<div>
+    <img src="../../assets/02/2.3/QQ截图20190818221546.png" width="200px">
+</div>
+<br>
+
+* `<header>`：主要用于为`<article.../>`定义文章“标题”。
+* `<hgroup>`：该元素主要用于组织多个<h>标题元素，当`<article.../>`包含多个标题元素时，可以使用`<hgroup.../>`把它们组成一组。
+* `<footer>`：主要用于为`<article.../>`定义文章“脚注”。
+* `<figure.../>`：该元素主要用于表示一块独立的“图片区域”，该元素内部可以包含一个或多个`<img.../>`元素多代表的图片。此外，该元素还可以包含一个`<figcaption.../>`元素，用于指定该“图片区域”的标题。
+* `<figcaption>`：常放于<figure.../>内部，用于“图片区域”的标题。
+
+程序清单：[codes\02\2.3\figure.html](https://github.com/The-Emperor1/fk-html-css-javascript/blob/master/codes/02/2.3/figure.html)</br>
+页面效果：
+<br>
+<div>
+    <img src="../../assets/02/2.3/QQ截图20190818222114.png" width="200px">
+</div>
+<br>
